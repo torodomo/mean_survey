@@ -28,7 +28,7 @@ export class CreateComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getID();
+    this.getID(); // On page load we run our getID() function
   }
 
   getID() {
@@ -40,6 +40,11 @@ export class CreateComponent implements OnInit {
     });
   }
 
+  // This function will go to the user service and run the
+  // getID() function there, retrieve data (the user's name in this case)
+  // and save it in our name variable or retrieve an error and navigate
+  // back to the login page
+
   create() {
     this.newpoll.creator = this.name;
     this._ps.create(this.newpoll)
@@ -48,5 +53,13 @@ export class CreateComponent implements OnInit {
     })
     .catch(err => console.warn(err));
   }
+
+  // This function will first set our newpoll.creator to our name
+  // variable (which because of the getID() function, is our currently
+  // logged in user's name) and then it will go to our poll service
+  // and run the create() function, passing in our newpoll variable (which
+  // has our form information). We'll receive some data (the new poll) and then
+  // navigate back to the dashboard. If we don't receive that data, then we'll
+  // get an error
 
 }

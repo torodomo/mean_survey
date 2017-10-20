@@ -8,7 +8,9 @@
             [(ngModel)] = "user.name"
             #name = "ngModel"
             required> 
-            <span *ngIf = "name.invalid">Please enter a name.</span>
+            <span *ngIf="name.invalid && (name.dirty || name.touched)">
+                <span *ngIf="question.errors.required">Question is required.</span>
+            </span>
         </p>
         <button
             type="submit"
