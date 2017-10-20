@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+}
+
+.container{
+    margin-left: 100px;
+}
+
+.header h3{
+    font: 100 20pt "Roboto";
+}
+.header p{
+    font: 100 15pt "Roboto";
+    margin-bottom: 20px;
+}
+
+.table{
+    margin-left: 50px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+th {
+    font: 100 17pt "Roboto";
+}
+td {
+    font: 100 13pt "Roboto";
+    text-align: center;
+}
+button {
+    padding: 5px 10px 5px 10px;
+}
+
+a{
+    font: 100 11pt "Roboto";
+    font-style: italic;
+}

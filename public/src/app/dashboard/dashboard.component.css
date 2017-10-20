@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+}
+
+.header h2{
+    font: 100 20pt "Roboto";
+}
+.header{
+    margin-bottom: 20px;
+}
+
+.logout {
+    padding: 5px 10px 5px 10px;
+    font: 100 10pt "Roboto";
+}
+
+.header a {
+    font: 100 10pt "Roboto";
+}
+
+.current{
+    font: 100 13pt "Roboto";
+}
+
+.current h4 {
+    font: 100 16pt "Roboto";
+}
+
+input[type=submit] {
+    font: 100 10pt "Roboto";
+}
+
+.topcontainer {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.searchbar {
+    margin-left: 30px;
+}

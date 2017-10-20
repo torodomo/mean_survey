@@ -1,0 +1,78 @@
+<div class="container">
+    
+    <h2>Create a New Poll</h2>
+    <a [routerLink] = "['/dashboard']">Cancel</a>
+    <form #createForm = "ngForm" method="post" (submit) = "create()">
+        <p>
+            Question:
+            <input
+                type="text"
+                name="question"
+                [(ngModel)] = "newpoll.question"
+                #question = "ngModel"
+                minlength = "8"
+                required>
+            <span *ngIf="question.invalid && (question.dirty || question.touched)">
+                <span *ngIf="question.errors.required">Question is required.</span>
+                <span *ngIf="question.errors.minlength">Please ensure you enter a question of at least 8 characters.</span>
+            </span>
+        </p>
+        <p>
+            Option 1:
+            <input
+                type="text"
+                name="optionone"
+                [(ngModel)] = "newpoll.optionone"
+                #optionone = "ngModel"
+                minlength = "4"
+                required>
+            <span *ngIf="optionone.invalid && (optionone.dirty || optionone.touched)">
+                <span *ngIf="optionone.errors.required">Option is required.</span>
+                <span *ngIf="optionone.errors.minlength">Please ensure you enter an option of at least 4 characters.</span>
+            </span>
+        </p>
+        <p>
+            Option 2:
+            <input
+                type="text"
+                name="optiontwo"
+                [(ngModel)] = "newpoll.optiontwo"
+                #optiontwo = "ngModel"
+                minlength = "4"
+                required>
+                <span *ngIf="optiontwo.invalid && (optiontwo.dirty || optiontwo.touched)">
+                    <span *ngIf="optiontwo.errors.required">Option is required.</span>
+                    <span *ngIf="optiontwo.errors.minlength">Please ensure you enter an option of at least 4 characters.</span>
+                </span>          
+        </p>
+        <p>
+            Option 3:
+            <input
+                type="text"
+                name="optionthree"
+                [(ngModel)] = "newpoll.optionthree"
+                #optionthree = "ngModel"
+                minlength = "4"
+                required>
+                <span *ngIf="optionthree.invalid && (optionthree.dirty || optionthree.touched)">
+                    <span *ngIf="optionthree.errors.required">Option is required.</span>
+                    <span *ngIf="optionthree.errors.minlength">Please ensure you enter an option of at least 4 characters.</span>
+                </span> 
+        </p>
+        <p>
+            Option 4:
+            <input
+                type="text"
+                name="optionfour"
+                [(ngModel)] = "newpoll.optionfour"
+                #optionfour = "ngModel"
+                required
+                minlength = "4">
+            <span *ngIf="optionfour.invalid && (optionfour.dirty || optionfour.touched)">
+                <span *ngIf="optionfour.errors.required">Option is required.</span>
+                <span *ngIf="optionfour.errors.minlength">Please ensure you enter an option of at least 4 characters.</span>
+            </span> 
+        </p>
+        <button type="submit" name="submit" [disabled] = "createForm.invalid">Submit</button>
+    </form>
+</div>

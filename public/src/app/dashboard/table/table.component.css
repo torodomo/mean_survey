@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+}
+
+h3{
+    font: 100 20pt "Roboto";
+}
+
+.container {
+    margin-left: 80px;
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th{
+    font: 100 17pt "Roboto";
+}
+
+td {
+    font: 100 13pt "Roboto";
+}
+button {
+    padding: 5px 10px 5px 10px;
+}

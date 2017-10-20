@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+    text-align: center;
+}
+h1{
+    font: 100 40pt "Roboto";
+}
+
+.header p {
+    font: 100 17pt "Roboto";
+}
+
+.header {
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.stuff{
+    width: 1300px;
+}

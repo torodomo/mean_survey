@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+}
+
+.container {
+    margin-left: 80px;
+    width: 900px;
+}
+
+a{
+    margin-left: 570px;
+    font: 100 10pt "Roboto";
+}
+
+h2{
+    font: 100 20pt "Roboto";
+}
+
+p {
+    font: 100 13pt "Roboto";
+    margin-bottom: 20px;
+}
+span {
+    color: red;
+    font: 100 11pt "Roboto";
+    font-style: italic;
+}
+
+button{
+    font: 100 10pt "Roboto";
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}

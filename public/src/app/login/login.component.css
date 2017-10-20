@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+}
+
+.login{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login h2{
+    font: 100 20pt "Roboto";
+    margin-bottom: 10px;
+}
+
+.login p {
+    font: 100 15pt "Roboto";
+    margin-bottom: 10px;
+}
+
+span{
+    color: red;
+    font: 100 13pt "Roboto";
+    font-style: italic;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 20px;
+    font: 100 10pt "Roboto";
+    padding: 5px 10px 5px 10px;
+}
